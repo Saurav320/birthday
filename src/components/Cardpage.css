@@ -1,0 +1,135 @@
+/* ================= GLOBAL ================= */
+.cardPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 15px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width:300px;
+  width: 100%;
+  text-align: center;
+  object-fit:contain;
+  animation: fadeIn 1s ease-in;
+}
+
+.card img {
+  width: 90%;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card p {
+  font-size: 15px;
+  color: #ff4d6d;
+  margin-bottom: 5px;
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ff512f, #f09819);
+  color: white;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.card button:hover{
+  background: linear-gradient(135deg, #ff0844, #ffb199);
+  transform: translateY(-4px) scale(1.07);
+  box-shadow:
+    0 20px 40px rgba(255, 8, 68, 0.45),
+    0 0 25px rgba(255, 177, 153, 0.8);
+}
+button:hover::before{
+  left:120%;
+}
+
+
+/* Card ke bahar buttons */
+.navBtns {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.navBtns button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ff5e62, #ff9966);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+.navBtns button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.navBtns button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 25px 20px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+  }
+
+  .card button {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 15px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card button {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .card img {
+    margin-bottom: 15px;
+  }
+}

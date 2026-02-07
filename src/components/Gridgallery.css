@@ -1,0 +1,44 @@
+.gridmaindiv {
+ background: linear-gradient(135deg, #ff512f, #f09819, #ff6a88);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 💻 Desktop & Laptop: 4 images */
+  gap: 14px;
+  padding: 10px;
+}
+.galleryimgbox {
+  object-fit: cover;
+}
+
+.gridcard {
+  background: linear-gradient(135deg, #ff9a9e, #ff6f61);
+  padding: 6px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.gridcard:hover {
+  transform: translateY(-2px) scale(1.5);
+}
+
+.gridcard img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  height: 500px;
+  border-radius: 25px;
+  padding: 6px solid white;
+}
+
+@media (max-width: 480px) {
+  .gridmaindiv {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .gridcard img {
+    height: 300px;
+  }
+}
