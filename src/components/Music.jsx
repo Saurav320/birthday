@@ -13,9 +13,10 @@ const Music = () => {
 
       <h2>🎵 Songs</h2>
 
-      <audio controls src="/song1.mp3"></audio>
-      <audio controls src="/song2.mp3"></audio>
-      <audio controls src="/song3.mp3"></audio>
+      <audio controls src="/musics/Song1.mp3"></audio>
+      <audio controls src="/musics/song2.mp3"></audio>
+      <audio controls src="/musics/song3.mp3"></audio>
+     
     </div>
   );
 };
