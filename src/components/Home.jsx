@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <div className="home">
       <section className="section1">
-        <h1>Happy Birthday Isah (पगली) 🤪🎂</h1>
+        <h1>Happy Birthday Isha (पगली) 🤪🎂</h1>
 
         <div className="timer">
           <div><span>{time.d}</span> Days</div>
