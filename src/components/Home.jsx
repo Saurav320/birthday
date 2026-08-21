@@ -15,7 +15,7 @@ export default function Home() {
   });
 
   useEffect(() => {
-    const target = new Date("february 11, 2026 00:00:00").getTime();
+    const target = new Date("february 11, 2027 00:00:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
